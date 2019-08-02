@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'raleway_blackregular';
+    src: url('raleway-black-webfont.woff2') format('woff2'),
+         url('raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('raleway-bold-webfont.woff2') format('woff2'),
+    url('raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_lightregular';
+    src: url('raleway-light-webfont.woff2') format('woff2'),
+    url('raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.woff2') format('woff2'),
+    url('raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_thinregular';
+    src: url('raleway-thin-webfont.woff2') format('woff2'),
+    url('raleway-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-black {
+    font-family: 'raleway_blackregular'
+}
+.text-bold {
+    /* font-family: 'ralewaybold' */
+    font-weight: bold;
+}
+.text-regular {
+    font-family: 'ralewayregular'
+}
+.text-lighter {
+    font-family: 'raleway_lightregular'
+}
+.text-thin {
+    font-family: 'raleway_thinregular'
+}

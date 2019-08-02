@@ -1,0 +1,48 @@
+.bg-white {
+    background-color: #fff;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.animate {
+    transition: transform .5s ease;
+}
+.pointer {
+    cursor: pointer;
+}
+/* Media Queries */
+
+$mobile: 768px;
+$tablet: 1024px;
+@media only screen and (max-width: $mobile) { // Mobile Classes
+  .view-wrapper {
+      min-width: 100%;
+      max-width: 100%;
+  }
+  /* Transitions */
+  .default-enter-active, .default-leave-active {
+      transition: all .5s ease;
+      opacity: 1; //Cancel previous animation
+  }
+  .default-enter, .default-leave-to {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+  }
+  .default-enter {
+      transform: translate(100%);
+  }
+  .default-leave-to {
+      transform: translate(-100%);
+  }
+}
+@media only screen and (max-width: $tablet) and (min-width: $mobile) { // Tablet Classes
+  .view-wrapper {
+      min-width: 60%;
+      max-width: 60%;
+  }
+}
+@media only screen and (max-width: $tablet) { // Both Mobile & Tablet Classes
+}
